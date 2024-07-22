@@ -1,9 +1,15 @@
-function taskFirst() {
-  const task = "i prefer const but ";
-  return task
-}
-
-function taskNext() {
-    let task = "let she also good ";
+export function taskFirst() {
+    const task = 'I prefer const when I can.';
     return task;
-}
+  }
+  
+  export function getLast() {
+    return ' is okay';
+  }
+  
+  export function taskNext() {
+    let combination = 'But sometimes let';
+    combination += getLast();
+  
+    return combination;
+  }

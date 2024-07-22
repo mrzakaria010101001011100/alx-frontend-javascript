@@ -1,2 +1,10 @@
 #!/usr/bin/node
-const x = (x,y) ==> {return x + y};
+export default function getNeighborhoodsList() {
+    this.sanFranciscoNeighborhoods = ['SOMA', 'Union Square'];
+
+    const self = this;
+    this.addNeighborhood = (newNeighborhood) => {
+      self.sanFranciscoNeighborhoods.push(newNeighborhood);
+      return self.sanFranciscoNeighborhoods;
+    };
+  }
