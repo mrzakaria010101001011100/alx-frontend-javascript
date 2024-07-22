@@ -1,9 +1,9 @@
-#!/usr/bin/node
-
 function taskFirst() {
-  const taskFirst = "";
+  const task = "i prefer const but ";
+  return task
 }
 
 function taskNext() {
-    let taskNext = "";
+    let task = "let she also good ";
+    return task;
 }
